@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "serve": "ng-openapi-gen && ng serve --proxy-config proxy.conf.js",
+    "serve-wo": "ng serve --proxy-config proxy.conf.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -18,6 +20,13 @@
     "@angular/platform-browser": "~12.0.4",
     "@angular/platform-browser-dynamic": "~12.0.4",
     "@angular/router": "~12.0.4",
+    "@rxweb/reactive-form-validators": "^2.1.3",
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.2.6",
+    "chart.js": "^2.9.4",
+    "ng2-charts": "^2.4.2",
+    "postcss": "^8.3.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
@@ -34,6 +43,8 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-openapi-gen": "0.17.1",
+    "tailwindcss": "^2.2.0",
     "typescript": "~4.2.3"
   }
 }

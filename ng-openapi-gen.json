@@ -1,0 +1,12 @@
+{
+  "input": "http://localhost:8080/q/openapi",
+  "output": "src/app/generated",
+  "excludeTags": ["Api"],
+  "modelIndex": false,
+  "serviceIndex": false,
+  "serviceSuffix": "Repository",
+  "configuration": "RepositoryConfiguration",
+  "baseService": "BaseRepository",
+  "module": "RepositoryModule",
+  "enumStyle": "upper"
+}

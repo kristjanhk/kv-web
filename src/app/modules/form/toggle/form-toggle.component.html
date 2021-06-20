@@ -1,0 +1,9 @@
+<form [formGroup]="form">
+  <label class="form-toggle-label">{{label}}</label>
+  <button type="button"
+          class="form-toggle-button"
+          [ngClass]="{'bg-indigo-600': enabled, 'bg-gray-200': !enabled}"
+          (click)="toggle()">
+    <span class="form-toggle-span transform-gpu" [ngClass]="{'translate-x-5': enabled}"></span>
+  </button>
+</form>

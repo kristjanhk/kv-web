@@ -1,0 +1,3 @@
+.filter {
+  @apply flex flex-row flex-wrap space-x-2
+}

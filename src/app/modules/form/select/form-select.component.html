@@ -1,0 +1,9 @@
+<form [formGroup]="form">
+  <label class="form-select-label">{{label}}</label>
+  <select [name]="label" [formControlName]="field" class="form-select">
+    <option *ngFor="let option of options" [selected]="option === form.value[field]">{{option}}</option>
+  </select>
+  <p class="form-input-error" *ngFor="let error of getErrors()">
+    {{field}}: {{error}}<br/>
+  </p>
+</form>

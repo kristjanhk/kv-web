@@ -1,0 +1,16 @@
+.form-input-double-fieldset {
+  @apply bg-white
+}
+
+.form-input-double-legend {
+  @apply block text-sm font-medium text-gray-700
+}
+
+.form-input-double {
+  @apply mt-1 rounded-md shadow-sm -space-y-px
+}
+
+.form-input-double-input {
+  @apply focus:ring-indigo-500 focus:border-indigo-500 relative block w-36 bg-transparent
+  focus:z-10 sm:text-sm border-gray-300
+}

@@ -1,0 +1,21 @@
+<form [formGroup]="form" (ngSubmit)="submit()" class="filter">
+  <form-toggle label="Active" [form]="form" field="active"></form-toggle>
+  <form-select label="Type" [form]="form" field="type" [options]="typeOptions"></form-select>
+  <form-select label="County" [form]="form" field="county" [options]="countyOptions"></form-select>
+  <form-select label="Rooms" [form]="form" field="rooms" [options]="roomsOptions"></form-select>
+  <form-input-double label="Price"
+                     [form]="form"
+                     [input1]="{type: 'text', field: 'priceMin', hint: 'From'}"
+                     [input2]="{type: 'text', field: 'priceMax', hint: 'To'}"></form-input-double>
+  <form-input-double label="Size"
+                     [form]="form"
+                     [input1]="{type: 'text', field: 'sizeMin', hint: 'From'}"
+                     [input2]="{type: 'text', field: 'sizeMax', hint: 'To'}"></form-input-double>
+  <form-input-double label="Date"
+                     [form]="form"
+                     [input1]="{type: 'date', field: 'dateMin', hint: 'From'}"
+                     [input2]="{type: 'date', field: 'dateMax', hint: 'To'}"></form-input-double>
+  <form-button label="Search" [submit]="true" [form]="form"></form-button>
+</form>
+
+
