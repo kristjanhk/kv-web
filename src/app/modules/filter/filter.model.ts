@@ -17,14 +17,14 @@ export class FilterModel implements KvGraphInput {
   active: boolean = true;
 
   @oneOf({matchValues: Object.values(KvType)})
-  type?: KvType;
+  type: KvType = KvType.APARTMENT_SALE;
 
   @oneOf({matchValues: Object.values(KvCounty)})
-  county?: KvCounty;
+  county: KvCounty = KvCounty.TARTUMAA;
 
   @numeric({acceptValue: NumericValueType.PositiveNumber})
   @range({minimumNumber: 1, maximumNumber: 8})
-  rooms?: number;
+  rooms: number = 3;
 
   @numeric({acceptValue: NumericValueType.PositiveNumber, allowDecimal: true, isFormat: true, digitsInfo: '0.2-2'})
   priceMin?: number;
